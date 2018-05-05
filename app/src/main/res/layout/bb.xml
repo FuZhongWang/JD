@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_alignParentTop="true"
+    android:id="@+id/f1_frag"
+    android:layout_width="wrap_content"
+    android:layout_height="45dp">
+
+
+    <View
+        android:id="@+id/home_title_bar_bg_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:id="@+id/f1_erweima"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/retn"
+                android:src="@drawable/leftjiantou"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="3px"
+            android:layout_marginRight="3px"
+            android:background="@drawable/round"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="32dp">
+
+            <ImageView
+                android:id="@+id/b_cha"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/search_icon2"
+                android:layout_width="17dp"
+                android:layout_height="17dp" />
+
+            <EditText
+                android:id="@+id/b_ed"
+                android:textCursorDrawable="@null"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:textColor="#4C4C4C"
+                android:textSize="15dp"
+                android:lines="1"
+                android:ellipsize="end"
+                android:hint="运动户外超级品牌类日 跨店铺跨店铺"
+                />
+            <ImageView
+                android:id="@+id/bb_img"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/root"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/b_sous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="搜索"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

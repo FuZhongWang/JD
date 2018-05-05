@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_alignParentTop="true"
+    android:id="@+id/c_frag"
+    android:background="#fff"
+    android:layout_width="wrap_content"
+    android:layout_height="45dp">
+
+
+    <View
+        android:id="@+id/home_title_bar_bg_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/cc_ll"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:id="@+id/c_erweima"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+
+                android:src="@drawable/sao_kind"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="3px"
+            android:layout_marginRight="3px"
+            android:background="@drawable/round2"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:id="@+id/zhongjian"
+            android:layout_width="0dp"
+            android:layout_height="30dp">
+
+            <ImageView
+                android:id="@+id/c_cha"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/search_icon2"
+                android:layout_width="17dp"
+                android:layout_height="17dp" />
+
+            <TextView
+                android:id="@+id/c_ed"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:textColor="#BFBFBF"
+                android:textSize="13dp"
+                android:lines="1"
+                android:ellipsize="end"
+                android:text=""
+                />
+            <ImageView
+                android:id="@+id/c_img"
+                android:focusable="false"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/root"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="50dp"
+            android:id="@+id/cc_xx"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/order_msg"
+                android:layout_width="22dp"
+                android:layout_height="22dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="xudeyang.bawie.com.jd.view.activity.RegisterActivity">
+    <LinearLayout
+        android:id="@+id/seah_f2lllel"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="#4C4C4C"
+        android:layout_height="25dp"></LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/lbtn"
+            android:layout_margin="5dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:srcCompat="@drawable/cha" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/lbtn"
+            android:layout_centerHorizontal="true"
+            android:text="京东登录"
+            android:textStyle="bold"
+            android:textSize="18dp" />
+
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/lname"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入手机号"
+        android:inputType="number"
+        />
+    <EditText
+        android:id="@+id/lpassword"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="请输入密码"/>
+
+    <Button
+        android:id="@+id/ldl"
+        android:enabled="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="登录" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/lzc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="手机快速注册"/>
+
+        <TextView
+            android:id="@+id/lzh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/lzc"
+            android:layout_alignBottom="@+id/lzc"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:text="忘记密码" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:autoLink="all"
+            android:text="登录即代表您已同意京东隐私政策" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_above="@+id/textView3"
+            android:layout_marginBottom="8dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgwx"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/weixin" />
+
+            <ImageView
+                android:id="@+id/imgqq"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/mqq" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

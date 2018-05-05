@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/f1_stagimg"
+        android:layout_width="170dp"
+        android:layout_gravity="center"
+        android:layout_height="170dp"
+        android:layout_margin="5dp"
+        app:srcCompat="@android:drawable/btn_star" />
+    <TextView
+        android:id="@+id/f1_stagtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/f1_stagprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:layout_marginLeft="10dp"
+        android:text="TextView" />
+
+</LinearLayout>

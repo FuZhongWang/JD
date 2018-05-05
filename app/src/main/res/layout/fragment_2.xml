@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#EFEFEF"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/seah_f2lllel"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="#4C4C4C"
+        android:layout_height="25dp"></LinearLayout>
+<xudeyang.bawie.com.jd.utils.SecrchActivity
+    android:id="@+id/frag2_cc"
+    android:layout_below="@+id/seah_f2lllel"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"></xudeyang.bawie.com.jd.utils.SecrchActivity>
+
+    <View
+        android:id="@+id/frag2_view"
+        android:layout_below="@+id/frag2_cc"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ABABAB"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/f2_left_rcl"
+        android:layout_below="@+id/frag2_view"
+        android:layout_width="85dp"
+        android:background="#ffffff"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+    <ImageView
+        android:id="@+id/f2_imggg"
+        android:layout_toRightOf="@id/f2_left_rcl"
+        android:layout_below="@id/frag2_view"
+        android:layout_width="match_parent"
+        android:layout_margin="3dp"
+        android:layout_height="85dp"
+        android:src="@drawable/recommend"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/f2_right_rcl"
+        android:layout_toRightOf="@id/f2_left_rcl"
+        android:layout_below="@id/f2_imggg"
+        android:layout_width="match_parent"
+        android:background="#EFEFEF"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+<fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+    android:id="@+id/jcplayer"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"></fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:id="@+id/jc_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/jc_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/jc_author"
+            android:layout_alignBottom="@+id/jc_author"
+            android:layout_marginEnd="16dp"
+            android:layout_toStartOf="@+id/jc_durationMin"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/jc_durationMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/jc_time"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:text="TextView" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="13dp"
+            android:layout_toStartOf="@+id/jc_time"
+            app:srcCompat="@drawable/normalheart" />
+    </RelativeLayout>
+    <View
+        android:background="#9f9a9a"
+        android:layout_width="match_parent"
+        android:layout_height="12px"></View>
+</LinearLayout>

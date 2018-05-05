@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/f2lllsssssl"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="#4C4C4C"
+        android:layout_height="25dp"></LinearLayout>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/f4_rflayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/f4_gouwuche"
+            android:text="购物车"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#4E4E4E" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+
+       >
+        <TextView
+            android:id="@+id/f4_kong"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:text="购物车空空如也~快去添加些商品吧!"/>
+
+        <com.github.androidprogresslayout.ProgressLayout
+            android:id="@+id/f4_progress_layout"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:progressLayout="http://schemas.android.com/apk/res-auto"
+            progressLayout:progress="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></com.github.androidprogresslayout.ProgressLayout>
+        <ExpandableListView
+            android:id="@+id/exlv"
+            android:groupIndicator="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ExpandableListView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/f4rrr"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <CheckBox
+            android:id="@+id/cb_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="#686868"
+            android:text="全选" />
+
+        <TextView
+            android:id="@+id/f4_price_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/cb_all"
+            android:layout_marginLeft="5dp"
+            android:textSize="16dp"
+            android:textColor="#000000"
+            android:text="合计:￥0.00" />
+
+
+        <TextView
+            android:id="@+id/f4_gobuy"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:background="#f00"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:text="去结算(0)"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/f4_del"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/f4_gobuy"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="90dp"
+            android:layout_marginBottom="5dp"
+            android:text="删除" />
+    </RelativeLayout>
+        </LinearLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

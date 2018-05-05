@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/shob_rcv_img"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="11dp"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/shob_rcv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/shob_rcv_img"
+        android:layout_below="@+id/shob_rcv_img"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/shob_rcv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/shob_rcv_title"
+        android:layout_below="@+id/shob_rcv_title"
+        android:textColor="#f00"
+        android:textSize="17dp"
+        android:text="TextView" />
+
+
+</RelativeLayout>
